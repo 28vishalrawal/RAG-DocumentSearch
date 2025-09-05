@@ -1,0 +1,20 @@
+
+uv init
+
+uv venv
+
+
+.venv\Scripts\activate
+
+uv add -r requirements.txt
+
+pip install jupyter ipykernel sentence-transformers
+
+import sys
+print(sys.executable)
+!{sys.executable} -m pip install sentence-transformers
+
+!{sys.executable} -m pip show sentence-transformers
+
+import sys
+!{sys.executable} -m pip install sentence-transformers
